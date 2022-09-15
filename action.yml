@@ -1,0 +1,36 @@
+name: Build Dexes
+description: 'Builds datadexes mentioned in config.json, and pushes any changes to build branch.'
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout main branch
+      uses: actions/checkout@v3
+
+    - name: Setup python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    
+    - name: Run build script, move output, save hash
+      run: |
+        pip install commentjson
+        pip install jsonpath_ng
+        python $GITHUB_ACTION_PATH/compile_build.py config.json
+        mv ./build/ ../../
+        echo "hash=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+      shell: bash
+
+    - name: Checkout build branch
+      uses: actions/checkout@v3
+      with:
+        ref: build
+
+    - name: Commit to build branch
+      run: |
+        mv -v ../../build/* ./
+        git config --local user.name 'github-actions[bot]'
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git diff-index --quiet HEAD || git commit -m "Compiled changes from $hash"
+        git push
+      shell: bash
