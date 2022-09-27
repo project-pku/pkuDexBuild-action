@@ -46,18 +46,22 @@ def unroll_dex(dex, max_iter = 10):
       basePath = child["$override"] # get override path
       child.pop("$override") # remove override entry
       
-      # try to find the dict that override referenced, aka 'base'
+      # try to find the value that override referenced, aka 'base'
       expr = parse(basePath)
       base = None
       for match in expr.find(dex):
         base = copy.deepcopy(match.value)
 
-      # halt if override base dict not found
+      # halt if override base value not found
       if base is None:
         raise Exception(f"Override cmd referenced a non-existant path: {basePath}.")
       
-      merge_dicts(base, child) # merge overriden dict with base
-      path.update(dex, base) # update dex with new merged dict
+      if isinstance(base, dict):
+        merge_dicts(base, child) # merge overriden dict with base
+      else: #base is a value
+        #make sure that child has 0 properties, (override was removed)
+        assert len(child) == 0, f"Trying to override a dict {path} w/ a value {basePath}"
+      path.update(dex, base) # update dex with new merged dict / base value
 
 # Removes all properties in a dict, even those nested in lists, that satisfy func
 # func is a function that takes 1 string argument.
