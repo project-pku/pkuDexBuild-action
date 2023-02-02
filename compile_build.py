@@ -23,45 +23,62 @@ def merge_dicts(base, new):
 # max_iter (default 10) is the maximum number of iterations to unroll.
 # if the limit is hit, the dex is likely to have a circular override dependency.
 OVERRIDE_EXPRESSION = parse("$..'$override'")
-def unroll_dex(dex, max_iter = 10):
+def apply_overrides(dex, max_iter = 10):
   for i in range(max_iter+2): # one because range end is exclusive
                               # one to check if max_iter was too low
     
     # find paths of all override commands
-    overrideList = []
-    for match in OVERRIDE_EXPRESSION.find(dex):
-      overrideList.append(match.context.full_path)
-
-    # break early if no more overrides
+    overrideList = OVERRIDE_EXPRESSION.find(dex)
     if not overrideList:
-      break
+      break # break early if no more overrides
     
     # halt if max_iter isn't enough iterations to unroll
     if i == max_iter+1:
-      raise Exception(f"{max_iter} iterations was not enough to unroll the dex. Is this not a DAG?")
+      raise Exception(f"Couldn't finish override commands. Seems {max_iter} iterations was not enough to unroll the dex. Is this not a DAG?")
 
     # apply override to each path
-    for path in overrideList:
-      child = path.find(dex)[0].value
-      basePath = child["$override"] # get override path
-      child.pop("$override") # remove override entry
-      
-      # try to find the value that override referenced, aka 'base'
-      expr = parse(basePath)
-      base = None
-      for match in expr.find(dex):
-        base = copy.deepcopy(match.value)
-
-      # halt if override base value not found
-      if base is None:
+    for match in overrideList:
+      basePath = match.value # value of the command itself, i.e path of baseValue
+      try:
+        # try to find the value that override referenced, aka baseValue
+        baseValue = copy.deepcopy(parse(basePath).find(dex)[0].value)
+      except:
+        # halt if override base value not found
         raise Exception(f"Override cmd referenced a non-existant path: {basePath}.")
+      newValue = match.context.value
+      newValue.pop("$override")
       
-      if isinstance(base, dict):
-        merge_dicts(base, child) # merge overriden dict with base
-      else: #base is a value
-        #make sure that child has 0 properties, (override was removed)
-        assert len(child) == 0, f"Trying to override a dict {path} w/ a value {basePath}"
-      path.update(dex, base) # update dex with new merged dict / base value
+      if isinstance(baseValue, dict): # base is a dict
+        merge_dicts(baseValue, newValue) # merge overriden dict with base
+      else: # base is a value
+        # make sure that child has 0 proprties (the override command was removed)
+        assert len(newValue) == 0, f"Trying to override a dict {match.context.full_path} w/ a value {basePath}"
+      match.context.full_path.update(dex, baseValue) # update dex with new merged dict / base value
+
+INDEX_OVERRIDE_EXPRESSION = parse("$..'$index_override'")
+def apply_index_overrides(dex, max_iter = 10):
+  for i in range(max_iter+2): # one because range end is exclusive
+                              # one to check if max_iter was too low
+  
+    # find paths of all override commands
+    overrideList = INDEX_OVERRIDE_EXPRESSION.find(dex)
+    if not overrideList:
+      break # break early if no more overrides
+    
+    # halt if max_iter isn't enough iterations to unroll
+    if i == max_iter+1:
+      raise Exception(f"Couldn't finish index_override commands. Seems {max_iter} iterations was not enough to unroll the dex. Is this not a DAG?")
+
+    # apply override to each path
+    for match in overrideList:
+      baseIndex = match.value # e.g. main-series
+      try:
+        baseValue = copy.deepcopy(match.context.context.value[baseIndex]) # value @ e.g. Indices.main-series
+      except:
+        # halt if override base value not found
+        raise Exception(f"index_override cmd referenced a non-existant path: {baseIndex} @ {match.context.context.full_path}.")
+
+      match.context.full_path.update(dex, baseValue) # update e.g. pk3 w/ baseValue
 
 # Removes all properties in a dict, even those nested in lists, that satisfy func
 # func is a function that takes 1 string argument.
@@ -119,11 +136,10 @@ for dexType, dexList in dexes.items():
     else:
       merge_dicts(base, sdex)
 
-  # unroll final datadex
-  unroll_dex(base)
-
-  # remove all temp properties
-  remove_key(base, isTemp)
+  # unroll the final datadex
+  apply_overrides(base) #first apply override commands
+  apply_index_overrides(base) #second apply index_override commands
+  remove_key(base, isTemp) # finally, remove all temp properties
 
   # post-processing, write file
   with open(os.path.join(build_path,'{0}Dex.json'.format(dexType)), 'w', encoding='utf-8') as f:
