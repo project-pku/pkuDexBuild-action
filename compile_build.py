@@ -19,49 +19,14 @@ def merge_dicts(base, new):
     else:
       base[k] = v
 
-# Applies the "$override" commands in a given dex, then removes them.
+# Used to define override-like commands
 # max_iter (default 10) is the maximum number of iterations to unroll.
 # if the limit is hit, the dex is likely to have a circular override dependency.
-OVERRIDE_EXPRESSION = parse("$..'$override'")
-def apply_overrides(dex, max_iter = 10):
+def apply_override_like_cmd(cmd_name, dex, cmd_expr, getVal, max_iter = 10):
   for i in range(max_iter+2): # one because range end is exclusive
                               # one to check if max_iter was too low
-    
     # find paths of all override commands
-    overrideList = OVERRIDE_EXPRESSION.find(dex)
-    if not overrideList:
-      break # break early if no more overrides
-    
-    # halt if max_iter isn't enough iterations to unroll
-    if i == max_iter+1:
-      raise Exception(f"Couldn't finish override commands. Seems {max_iter} iterations was not enough to unroll the dex. Is this not a DAG?")
-
-    # apply override to each path
-    for match in overrideList:
-      basePath = match.value # value of the command itself, i.e path of baseValue
-      try:
-        # try to find the value that override referenced, aka baseValue
-        baseValue = copy.deepcopy(parse(basePath).find(dex)[0].value)
-      except:
-        # halt if override base value not found
-        raise Exception(f"Override cmd referenced a non-existant path: {basePath}.")
-      newValue = match.context.value
-      newValue.pop("$override")
-      
-      if isinstance(baseValue, dict): # base is a dict
-        merge_dicts(baseValue, newValue) # merge overriden dict with base
-      else: # base is a value
-        # make sure that child has 0 proprties (the override command was removed)
-        assert len(newValue) == 0, f"Trying to override a dict {match.context.full_path} w/ a value {basePath}"
-      match.context.full_path.update(dex, baseValue) # update dex with new merged dict / base value
-
-INDEX_OVERRIDE_EXPRESSION = parse("$..'$index_override'")
-def apply_index_overrides(dex, max_iter = 10):
-  for i in range(max_iter+2): # one because range end is exclusive
-                              # one to check if max_iter was too low
-  
-    # find paths of all override commands
-    overrideList = INDEX_OVERRIDE_EXPRESSION.find(dex)
+    overrideList = cmd_expr.find(dex)
     if not overrideList:
       break # break early if no more overrides
     
@@ -71,14 +36,36 @@ def apply_index_overrides(dex, max_iter = 10):
 
     # apply override to each path
     for match in overrideList:
-      baseIndex = match.value # e.g. main-series
       try:
-        baseValue = copy.deepcopy(match.context.context.value[baseIndex]) # value @ e.g. Indices.main-series
+        baseValue = getVal(dex, match)
       except:
         # halt if override base value not found
-        raise Exception(f"index_override cmd referenced a non-existant path: {baseIndex} @ {match.context.context.full_path}.")
+        raise Exception(f"{cmd_name} cmd referenced a non-existant path. See: {match.full_path}.")
 
-      match.context.full_path.update(dex, baseValue) # update e.g. pk3 w/ baseValue
+      match.context.full_path.update(dex, baseValue)
+
+# Applies the "$override" commands in a given dex, then removes them.
+OVERRIDE_EXPRESSION = parse("$..'$override'")
+def get_val_override(dex, match) :
+  basePath = match.value
+  baseValue = copy.deepcopy(parse(basePath).find(dex)[0].value)
+  newValue = match.context.value
+  newValue.pop("$override")
+  if isinstance(baseValue, dict): # base is a dict
+    merge_dicts(baseValue, newValue) # merge overriden dict with base
+  else: # base is a value
+    # make sure that child has 0 proprties (the override command was removed)
+    assert len(newValue) == 0, f"Trying to override a dict {match.context.full_path} w/ a value {basePath}"
+  return baseValue
+def apply_overrides(dex):
+  apply_override_like_cmd("Override", dex, OVERRIDE_EXPRESSION, get_val_override)
+
+# Applies the "$index_override" commands in a given dex, removing them in the process
+INDEX_OVERRIDE_EXPRESSION = parse("$..'$index_override'")
+def get_val_index_override(dex, match) :
+  return copy.deepcopy(match.context.context.value[match.value])
+def apply_index_overrides(dex):
+  apply_override_like_cmd("Index Override", dex, INDEX_OVERRIDE_EXPRESSION, get_val_index_override)
 
 # Removes all properties in a dict, even those nested in lists, that satisfy func
 # func is a function that takes 1 string argument.
