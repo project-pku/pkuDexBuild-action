@@ -27,6 +27,7 @@ runs:
 
     - name: Commit to build branch
       run: |
+        rm -r *
         mv -v ../../build/* ./
         git config --local user.name 'github-actions[bot]'
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
