@@ -1,0 +1,1342 @@
+{
+  "None.ji": {
+    "Indices": {
+      "main-series": 0
+    }
+  },
+  "Stench": {
+    "Indices": {
+      "main-series": 1
+    }
+  },
+  "Drizzle": {
+    "Indices": {
+      "main-series": 2
+    }
+  },
+  "Speed Boost": {
+    "Indices": {
+      "main-series": 3
+    }
+  },
+  "Battle Armor": {
+    "Indices": {
+      "main-series": 4
+    }
+  },
+  "Sturdy": {
+    "Indices": {
+      "main-series": 5
+    }
+  },
+  "Damp": {
+    "Indices": {
+      "main-series": 6
+    }
+  },
+  "Limber": {
+    "Indices": {
+      "main-series": 7
+    }
+  },
+  "Sand Veil": {
+    "Indices": {
+      "main-series": 8
+    }
+  },
+  "Static": {
+    "Indices": {
+      "main-series": 9
+    }
+  },
+  "Volt Absorb": {
+    "Indices": {
+      "main-series": 10
+    }
+  },
+  "Water Absorb": {
+    "Indices": {
+      "main-series": 11
+    }
+  },
+  "Oblivious": {
+    "Indices": {
+      "main-series": 12
+    }
+  },
+  "Cloud Nine": {
+    "Indices": {
+      "main-series": 13
+    }
+  },
+  "Compound Eyes": {
+    "Indices": {
+      "main-series": 14
+    }
+  },
+  "Insomnia": {
+    "Indices": {
+      "main-series": 15
+    }
+  },
+  "Color Change": {
+    "Indices": {
+      "main-series": 16
+    }
+  },
+  "Immunity": {
+    "Indices": {
+      "main-series": 17
+    }
+  },
+  "Flash Fire": {
+    "Indices": {
+      "main-series": 18
+    }
+  },
+  "Shield Dust": {
+    "Indices": {
+      "main-series": 19
+    }
+  },
+  "Own Tempo": {
+    "Indices": {
+      "main-series": 20
+    }
+  },
+  "Suction Cups": {
+    "Indices": {
+      "main-series": 21
+    }
+  },
+  "Intimidate": {
+    "Indices": {
+      "main-series": 22
+    }
+  },
+  "Shadow Tag": {
+    "Indices": {
+      "main-series": 23
+    }
+  },
+  "Rough Skin": {
+    "Indices": {
+      "main-series": 24
+    }
+  },
+  "Wonder Guard": {
+    "Indices": {
+      "main-series": 25
+    }
+  },
+  "Levitate": {
+    "Indices": {
+      "main-series": 26
+    }
+  },
+  "Effect Spore": {
+    "Indices": {
+      "main-series": 27
+    }
+  },
+  "Synchronize": {
+    "Indices": {
+      "main-series": 28
+    }
+  },
+  "Clear Body": {
+    "Indices": {
+      "main-series": 29
+    }
+  },
+  "Natural Cure": {
+    "Indices": {
+      "main-series": 30
+    }
+  },
+  "Lightning Rod": {
+    "Indices": {
+      "main-series": 31
+    }
+  },
+  "Serene Grace": {
+    "Indices": {
+      "main-series": 32
+    }
+  },
+  "Swift Swim": {
+    "Indices": {
+      "main-series": 33
+    }
+  },
+  "Chlorophyll": {
+    "Indices": {
+      "main-series": 34
+    }
+  },
+  "Illuminate": {
+    "Indices": {
+      "main-series": 35
+    }
+  },
+  "Trace": {
+    "Indices": {
+      "main-series": 36
+    }
+  },
+  "Huge Power": {
+    "Indices": {
+      "main-series": 37
+    }
+  },
+  "Poison Point": {
+    "Indices": {
+      "main-series": 38
+    }
+  },
+  "Inner Focus": {
+    "Indices": {
+      "main-series": 39
+    }
+  },
+  "Magma Armor": {
+    "Indices": {
+      "main-series": 40
+    }
+  },
+  "Water Veil": {
+    "Indices": {
+      "main-series": 41
+    }
+  },
+  "Magnet Pull": {
+    "Indices": {
+      "main-series": 42
+    }
+  },
+  "Soundproof": {
+    "Indices": {
+      "main-series": 43
+    }
+  },
+  "Rain Dish": {
+    "Indices": {
+      "main-series": 44
+    }
+  },
+  "Sand Stream": {
+    "Indices": {
+      "main-series": 45
+    }
+  },
+  "Pressure": {
+    "Indices": {
+      "main-series": 46
+    }
+  },
+  "Thick Fat": {
+    "Indices": {
+      "main-series": 47
+    }
+  },
+  "Early Bird": {
+    "Indices": {
+      "main-series": 48
+    }
+  },
+  "Flame Body": {
+    "Indices": {
+      "main-series": 49
+    }
+  },
+  "Run Away": {
+    "Indices": {
+      "main-series": 50
+    }
+  },
+  "Keen Eye": {
+    "Indices": {
+      "main-series": 51
+    }
+  },
+  "Hyper Cutter": {
+    "Indices": {
+      "main-series": 52
+    }
+  },
+  "Pickup": {
+    "Indices": {
+      "main-series": 53
+    }
+  },
+  "Truant": {
+    "Indices": {
+      "main-series": 54
+    }
+  },
+  "Hustle": {
+    "Indices": {
+      "main-series": 55
+    }
+  },
+  "Cute Charm": {
+    "Indices": {
+      "main-series": 56
+    }
+  },
+  "Plus": {
+    "Indices": {
+      "main-series": 57
+    }
+  },
+  "Minus": {
+    "Indices": {
+      "main-series": 58
+    }
+  },
+  "Forecast": {
+    "Indices": {
+      "main-series": 59
+    }
+  },
+  "Sticky Hold": {
+    "Indices": {
+      "main-series": 60
+    }
+  },
+  "Shed Skin": {
+    "Indices": {
+      "main-series": 61
+    }
+  },
+  "Guts": {
+    "Indices": {
+      "main-series": 62
+    }
+  },
+  "Marvel Scale": {
+    "Indices": {
+      "main-series": 63
+    }
+  },
+  "Liquid Ooze": {
+    "Indices": {
+      "main-series": 64
+    }
+  },
+  "Overgrow": {
+    "Indices": {
+      "main-series": 65
+    }
+  },
+  "Blaze": {
+    "Indices": {
+      "main-series": 66
+    }
+  },
+  "Torrent": {
+    "Indices": {
+      "main-series": 67
+    }
+  },
+  "Swarm": {
+    "Indices": {
+      "main-series": 68
+    }
+  },
+  "Rock Head": {
+    "Indices": {
+      "main-series": 69
+    }
+  },
+  "Drought": {
+    "Indices": {
+      "main-series": 70
+    }
+  },
+  "Arena Trap": {
+    "Indices": {
+      "main-series": 71
+    }
+  },
+  "Vital Spirit": {
+    "Indices": {
+      "main-series": 72
+    }
+  },
+  "White Smoke": {
+    "Indices": {
+      "main-series": 73
+    }
+  },
+  "Pure Power": {
+    "Indices": {
+      "main-series": 74
+    }
+  },
+  "Shell Armor": {
+    "Indices": {
+      "main-series": 75
+    }
+  },
+  "Air Lock": {
+    "Indices": {
+      "main-series": 76
+    }
+  },
+  "Tangled Feet": {
+    "Indices": {
+      "main-series": 77
+    }
+  },
+  "Motor Drive": {
+    "Indices": {
+      "main-series": 78
+    }
+  },
+  "Rivalry": {
+    "Indices": {
+      "main-series": 79
+    }
+  },
+  "Steadfast": {
+    "Indices": {
+      "main-series": 80
+    }
+  },
+  "Snow Cloak": {
+    "Indices": {
+      "main-series": 81
+    }
+  },
+  "Gluttony": {
+    "Indices": {
+      "main-series": 82
+    }
+  },
+  "Anger Point": {
+    "Indices": {
+      "main-series": 83
+    }
+  },
+  "Unburden": {
+    "Indices": {
+      "main-series": 84
+    }
+  },
+  "Heatproof": {
+    "Indices": {
+      "main-series": 85
+    }
+  },
+  "Simple": {
+    "Indices": {
+      "main-series": 86
+    }
+  },
+  "Dry Skin": {
+    "Indices": {
+      "main-series": 87
+    }
+  },
+  "Download": {
+    "Indices": {
+      "main-series": 88
+    }
+  },
+  "Iron Fist": {
+    "Indices": {
+      "main-series": 89
+    }
+  },
+  "Poison Heal": {
+    "Indices": {
+      "main-series": 90
+    }
+  },
+  "Adaptability": {
+    "Indices": {
+      "main-series": 91
+    }
+  },
+  "Skill Link": {
+    "Indices": {
+      "main-series": 92
+    }
+  },
+  "Hydration": {
+    "Indices": {
+      "main-series": 93
+    }
+  },
+  "Solar Power": {
+    "Indices": {
+      "main-series": 94
+    }
+  },
+  "Quick Feet": {
+    "Indices": {
+      "main-series": 95
+    }
+  },
+  "Normalize": {
+    "Indices": {
+      "main-series": 96
+    }
+  },
+  "Sniper": {
+    "Indices": {
+      "main-series": 97
+    }
+  },
+  "Magic Guard": {
+    "Indices": {
+      "main-series": 98
+    }
+  },
+  "No Guard": {
+    "Indices": {
+      "main-series": 99
+    }
+  },
+  "Stall": {
+    "Indices": {
+      "main-series": 100
+    }
+  },
+  "Technician": {
+    "Indices": {
+      "main-series": 101
+    }
+  },
+  "Leaf Guard": {
+    "Indices": {
+      "main-series": 102
+    }
+  },
+  "Klutz": {
+    "Indices": {
+      "main-series": 103
+    }
+  },
+  "Mold Breaker": {
+    "Indices": {
+      "main-series": 104
+    }
+  },
+  "Super Luck": {
+    "Indices": {
+      "main-series": 105
+    }
+  },
+  "Aftermath": {
+    "Indices": {
+      "main-series": 106
+    }
+  },
+  "Anticipation": {
+    "Indices": {
+      "main-series": 107
+    }
+  },
+  "Forewarn": {
+    "Indices": {
+      "main-series": 108
+    }
+  },
+  "Unaware": {
+    "Indices": {
+      "main-series": 109
+    }
+  },
+  "Tinted Lens": {
+    "Indices": {
+      "main-series": 110
+    }
+  },
+  "Filter": {
+    "Indices": {
+      "main-series": 111
+    }
+  },
+  "Slow Start": {
+    "Indices": {
+      "main-series": 112
+    }
+  },
+  "Scrappy": {
+    "Indices": {
+      "main-series": 113
+    }
+  },
+  "Storm Drain": {
+    "Indices": {
+      "main-series": 114
+    }
+  },
+  "Ice Body": {
+    "Indices": {
+      "main-series": 115
+    }
+  },
+  "Solid Rock": {
+    "Indices": {
+      "main-series": 116
+    }
+  },
+  "Snow Warning": {
+    "Indices": {
+      "main-series": 117
+    }
+  },
+  "Honey Gather": {
+    "Indices": {
+      "main-series": 118
+    }
+  },
+  "Frisk": {
+    "Indices": {
+      "main-series": 119
+    }
+  },
+  "Reckless": {
+    "Indices": {
+      "main-series": 120
+    }
+  },
+  "Multitype": {
+    "Indices": {
+      "main-series": 121
+    }
+  },
+  "Flower Gift": {
+    "Indices": {
+      "main-series": 122
+    }
+  },
+  "Bad Dreams": {
+    "Indices": {
+      "main-series": 123
+    }
+  },
+  "Pickpocket": {
+    "Indices": {
+      "main-series": 124
+    }
+  },
+  "Sheer Force": {
+    "Indices": {
+      "main-series": 125
+    }
+  },
+  "Contrary": {
+    "Indices": {
+      "main-series": 126
+    }
+  },
+  "Unnerve": {
+    "Indices": {
+      "main-series": 127
+    }
+  },
+  "Defiant": {
+    "Indices": {
+      "main-series": 128
+    }
+  },
+  "Defeatist": {
+    "Indices": {
+      "main-series": 129
+    }
+  },
+  "Cursed Body": {
+    "Indices": {
+      "main-series": 130
+    }
+  },
+  "Healer": {
+    "Indices": {
+      "main-series": 131
+    }
+  },
+  "Friend Guard": {
+    "Indices": {
+      "main-series": 132
+    }
+  },
+  "Weak Armor": {
+    "Indices": {
+      "main-series": 133
+    }
+  },
+  "Heavy Metal": {
+    "Indices": {
+      "main-series": 134
+    }
+  },
+  "Light Metal": {
+    "Indices": {
+      "main-series": 135
+    }
+  },
+  "Multiscale": {
+    "Indices": {
+      "main-series": 136
+    }
+  },
+  "Toxic Boost": {
+    "Indices": {
+      "main-series": 137
+    }
+  },
+  "Flare Boost": {
+    "Indices": {
+      "main-series": 138
+    }
+  },
+  "Harvest": {
+    "Indices": {
+      "main-series": 139
+    }
+  },
+  "Telepathy": {
+    "Indices": {
+      "main-series": 140
+    }
+  },
+  "Moody": {
+    "Indices": {
+      "main-series": 141
+    }
+  },
+  "Overcoat": {
+    "Indices": {
+      "main-series": 142
+    }
+  },
+  "Poison Touch": {
+    "Indices": {
+      "main-series": 143
+    }
+  },
+  "Regenerator": {
+    "Indices": {
+      "main-series": 144
+    }
+  },
+  "Big Pecks": {
+    "Indices": {
+      "main-series": 145
+    }
+  },
+  "Sand Rush": {
+    "Indices": {
+      "main-series": 146
+    }
+  },
+  "Wonder Skin": {
+    "Indices": {
+      "main-series": 147
+    }
+  },
+  "Analytic": {
+    "Indices": {
+      "main-series": 148
+    }
+  },
+  "Illusion": {
+    "Indices": {
+      "main-series": 149
+    }
+  },
+  "Imposter": {
+    "Indices": {
+      "main-series": 150
+    }
+  },
+  "Infiltrator": {
+    "Indices": {
+      "main-series": 151
+    }
+  },
+  "Mummy": {
+    "Indices": {
+      "main-series": 152
+    }
+  },
+  "Moxie": {
+    "Indices": {
+      "main-series": 153
+    }
+  },
+  "Justified": {
+    "Indices": {
+      "main-series": 154
+    }
+  },
+  "Rattled": {
+    "Indices": {
+      "main-series": 155
+    }
+  },
+  "Magic Bounce": {
+    "Indices": {
+      "main-series": 156
+    }
+  },
+  "Sap Sipper": {
+    "Indices": {
+      "main-series": 157
+    }
+  },
+  "Prankster": {
+    "Indices": {
+      "main-series": 158
+    }
+  },
+  "Sand Force": {
+    "Indices": {
+      "main-series": 159
+    }
+  },
+  "Iron Barbs": {
+    "Indices": {
+      "main-series": 160
+    }
+  },
+  "Zen Mode": {
+    "Indices": {
+      "main-series": 161
+    }
+  },
+  "Victory Star": {
+    "Indices": {
+      "main-series": 162
+    }
+  },
+  "Turboblaze": {
+    "Indices": {
+      "main-series": 163
+    }
+  },
+  "Teravolt": {
+    "Indices": {
+      "main-series": 164
+    }
+  },
+  "Aroma Veil": {
+    "Indices": {
+      "main-series": 165
+    }
+  },
+  "Flower Veil": {
+    "Indices": {
+      "main-series": 166
+    }
+  },
+  "Cheek Pouch": {
+    "Indices": {
+      "main-series": 167
+    }
+  },
+  "Protean": {
+    "Indices": {
+      "main-series": 168
+    }
+  },
+  "Fur Coat": {
+    "Indices": {
+      "main-series": 169
+    }
+  },
+  "Magician": {
+    "Indices": {
+      "main-series": 170
+    }
+  },
+  "Bulletproof": {
+    "Indices": {
+      "main-series": 171
+    }
+  },
+  "Competitive": {
+    "Indices": {
+      "main-series": 172
+    }
+  },
+  "Strong Jaw": {
+    "Indices": {
+      "main-series": 173
+    }
+  },
+  "Refrigerate": {
+    "Indices": {
+      "main-series": 174
+    }
+  },
+  "Sweet Veil": {
+    "Indices": {
+      "main-series": 175
+    }
+  },
+  "Stance Change": {
+    "Indices": {
+      "main-series": 176
+    }
+  },
+  "Gale Wings": {
+    "Indices": {
+      "main-series": 177
+    }
+  },
+  "Mega Launcher": {
+    "Indices": {
+      "main-series": 178
+    }
+  },
+  "Grass Pelt": {
+    "Indices": {
+      "main-series": 179
+    }
+  },
+  "Symbiosis": {
+    "Indices": {
+      "main-series": 180
+    }
+  },
+  "Tough Claws": {
+    "Indices": {
+      "main-series": 181
+    }
+  },
+  "Pixilate": {
+    "Indices": {
+      "main-series": 182
+    }
+  },
+  "Gooey": {
+    "Indices": {
+      "main-series": 183
+    }
+  },
+  "Aerilate": {
+    "Indices": {
+      "main-series": 184
+    }
+  },
+  "Parental Bond": {
+    "Indices": {
+      "main-series": 185
+    }
+  },
+  "Dark Aura": {
+    "Indices": {
+      "main-series": 186
+    }
+  },
+  "Fairy Aura": {
+    "Indices": {
+      "main-series": 187
+    }
+  },
+  "Aura Break": {
+    "Indices": {
+      "main-series": 188
+    }
+  },
+  "Primordial Sea": {
+    "Indices": {
+      "main-series": 189
+    }
+  },
+  "Desolate Land": {
+    "Indices": {
+      "main-series": 190
+    }
+  },
+  "Delta Stream": {
+    "Indices": {
+      "main-series": 191
+    }
+  },
+  "Stamina": {
+    "Indices": {
+      "main-series": 192
+    }
+  },
+  "Wimp Out": {
+    "Indices": {
+      "main-series": 193
+    }
+  },
+  "Emergency Exit": {
+    "Indices": {
+      "main-series": 194
+    }
+  },
+  "Water Compaction": {
+    "Indices": {
+      "main-series": 195
+    }
+  },
+  "Merciless": {
+    "Indices": {
+      "main-series": 196
+    }
+  },
+  "Shields Down": {
+    "Indices": {
+      "main-series": 197
+    }
+  },
+  "Stakeout": {
+    "Indices": {
+      "main-series": 198
+    }
+  },
+  "Water Bubble": {
+    "Indices": {
+      "main-series": 199
+    }
+  },
+  "Steelworker": {
+    "Indices": {
+      "main-series": 200
+    }
+  },
+  "Berserk": {
+    "Indices": {
+      "main-series": 201
+    }
+  },
+  "Slush Rush": {
+    "Indices": {
+      "main-series": 202
+    }
+  },
+  "Long Reach": {
+    "Indices": {
+      "main-series": 203
+    }
+  },
+  "Liquid Voice": {
+    "Indices": {
+      "main-series": 204
+    }
+  },
+  "Triage": {
+    "Indices": {
+      "main-series": 205
+    }
+  },
+  "Galvanize": {
+    "Indices": {
+      "main-series": 206
+    }
+  },
+  "Surge Surfer": {
+    "Indices": {
+      "main-series": 207
+    }
+  },
+  "Schooling": {
+    "Indices": {
+      "main-series": 208
+    }
+  },
+  "Disguise": {
+    "Indices": {
+      "main-series": 209
+    }
+  },
+  "Battle Bond": {
+    "Indices": {
+      "main-series": 210
+    }
+  },
+  "Power Construct": {
+    "Indices": {
+      "main-series": 211
+    }
+  },
+  "Corrosion": {
+    "Indices": {
+      "main-series": 212
+    }
+  },
+  "Comatose": {
+    "Indices": {
+      "main-series": 213
+    }
+  },
+  "Queenly Majesty": {
+    "Indices": {
+      "main-series": 214
+    }
+  },
+  "Innards Out": {
+    "Indices": {
+      "main-series": 215
+    }
+  },
+  "Dancer": {
+    "Indices": {
+      "main-series": 216
+    }
+  },
+  "Battery": {
+    "Indices": {
+      "main-series": 217
+    }
+  },
+  "Fluffy": {
+    "Indices": {
+      "main-series": 218
+    }
+  },
+  "Dazzling": {
+    "Indices": {
+      "main-series": 219
+    }
+  },
+  "Soul-Heart": {
+    "Indices": {
+      "main-series": 220
+    }
+  },
+  "Tangling Hair": {
+    "Indices": {
+      "main-series": 221
+    }
+  },
+  "Receiver": {
+    "Indices": {
+      "main-series": 222
+    }
+  },
+  "Power of Alchemy": {
+    "Indices": {
+      "main-series": 223
+    }
+  },
+  "Beast Boost": {
+    "Indices": {
+      "main-series": 224
+    }
+  },
+  "RKS System": {
+    "Indices": {
+      "main-series": 225
+    }
+  },
+  "Electric Surge": {
+    "Indices": {
+      "main-series": 226
+    }
+  },
+  "Psychic Surge": {
+    "Indices": {
+      "main-series": 227
+    }
+  },
+  "Misty Surge": {
+    "Indices": {
+      "main-series": 228
+    }
+  },
+  "Grassy Surge": {
+    "Indices": {
+      "main-series": 229
+    }
+  },
+  "Full Metal Body": {
+    "Indices": {
+      "main-series": 230
+    }
+  },
+  "Shadow Shield": {
+    "Indices": {
+      "main-series": 231
+    }
+  },
+  "Prism Armor": {
+    "Indices": {
+      "main-series": 232
+    }
+  },
+  "Neuroforce": {
+    "Indices": {
+      "main-series": 233
+    }
+  },
+  "Intrepid Sword": {
+    "Indices": {
+      "main-series": 234
+    }
+  },
+  "Dauntless Shield": {
+    "Indices": {
+      "main-series": 235
+    }
+  },
+  "Libero": {
+    "Indices": {
+      "main-series": 236
+    }
+  },
+  "Ball Fetch": {
+    "Indices": {
+      "main-series": 237
+    }
+  },
+  "Cotton Down": {
+    "Indices": {
+      "main-series": 238
+    }
+  },
+  "Propeller Tail": {
+    "Indices": {
+      "main-series": 239
+    }
+  },
+  "Mirror Armor": {
+    "Indices": {
+      "main-series": 240
+    }
+  },
+  "Gulp Missile": {
+    "Indices": {
+      "main-series": 241
+    }
+  },
+  "Stalwart": {
+    "Indices": {
+      "main-series": 242
+    }
+  },
+  "Steam Engine": {
+    "Indices": {
+      "main-series": 243
+    }
+  },
+  "Punk Rock": {
+    "Indices": {
+      "main-series": 244
+    }
+  },
+  "Sand Spit": {
+    "Indices": {
+      "main-series": 245
+    }
+  },
+  "Ice Scales": {
+    "Indices": {
+      "main-series": 246
+    }
+  },
+  "Ripen": {
+    "Indices": {
+      "main-series": 247
+    }
+  },
+  "Ice Face": {
+    "Indices": {
+      "main-series": 248
+    }
+  },
+  "Power Spot": {
+    "Indices": {
+      "main-series": 249
+    }
+  },
+  "Mimicry": {
+    "Indices": {
+      "main-series": 250
+    }
+  },
+  "Screen Cleaner": {
+    "Indices": {
+      "main-series": 251
+    }
+  },
+  "Steely Spirit": {
+    "Indices": {
+      "main-series": 252
+    }
+  },
+  "Perish Body": {
+    "Indices": {
+      "main-series": 253
+    }
+  },
+  "Wandering Spirit": {
+    "Indices": {
+      "main-series": 254
+    }
+  },
+  "Gorilla Tactics": {
+    "Indices": {
+      "main-series": 255
+    }
+  },
+  "Neutralizing Gas": {
+    "Indices": {
+      "main-series": 256
+    }
+  },
+  "Pastel Veil": {
+    "Indices": {
+      "main-series": 257
+    }
+  },
+  "Hunger Switch": {
+    "Indices": {
+      "main-series": 258
+    }
+  },
+  "Quick Draw": {
+    "Indices": {
+      "main-series": 259
+    }
+  },
+  "Unseen Fist": {
+    "Indices": {
+      "main-series": 260
+    }
+  },
+  "Curious Medicine": {
+    "Indices": {
+      "main-series": 261
+    }
+  },
+  "Transistor": {
+    "Indices": {
+      "main-series": 262
+    }
+  },
+  "Dragon's Maw": {
+    "Indices": {
+      "main-series": 263
+    }
+  },
+  "Chilling Neigh": {
+    "Indices": {
+      "main-series": 264
+    }
+  },
+  "Grim Neigh": {
+    "Indices": {
+      "main-series": 265
+    }
+  },
+  "As One (Glastrier)": {
+    "Indices": {
+      "main-series": 266
+    }
+  },
+  "As One (Spectrier)": {
+    "Indices": {
+      "main-series": 267
+    }
+  }
+}
