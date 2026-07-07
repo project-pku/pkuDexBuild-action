@@ -1,0 +1,1 @@
+> **Archived.** Project-PKU development continues in the [pku-mono](https://github.com/project-pku/pku-mono) monorepo (private while in early development). This repository is frozen as reference material.
